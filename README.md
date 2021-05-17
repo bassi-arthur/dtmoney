@@ -1,7 +1,7 @@
 #🍳 About
 Personal finance management interface
 
-![Dtmoney](./_captures/web.png)
+![Dtmoney](./captures/web.png)
 
 # 💻 Test locally
 
