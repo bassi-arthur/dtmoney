@@ -52,7 +52,12 @@ export function Summary(){
                     <p>Total</p>
                     <img src={totalImg} alt=""/>
                 </header>
-                <strong>R${summary.total}</strong>
+                <strong>
+                    {new Intl.NumberFormat('pt-BR', {
+                        style: 'currency',
+                        currency: 'BRL'
+                    }).format(summary.deposits-summary.withdraw)}
+                </strong>
             </div>
         </Container>
     )
