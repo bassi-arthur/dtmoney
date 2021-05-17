@@ -1,5 +1,23 @@
-# Getting Started with Create React App
+#🍳 About
+Personal finance management interface
 
+![Dtmoney](./_captures/web.png)
+
+# 💻 Test locally
+
+## Using yarn
+```sh
 # Start the json server fake api and run development server
-yarn start
+yarn install
+yarn
+```
+OR
+
+## Using npm
+```sh
+# Start the json server fake api and run development server
+npm install
+npm start
+```
+
 
