@@ -48,7 +48,7 @@ export  function NewTransactionModal({isOpen, onRequestClose}: NewTransactionMod
             <img src={closeImg} alt="Fechar modal"/>
         </button>
         <Container onSubmit={handleCreateNewTransaction}>
-            <h2>Cadastrar Transçao</h2>
+            <h2>Cadastrar Transaçao</h2>
 
             <input
                 placeholder="Titulo"
