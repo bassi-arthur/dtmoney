@@ -26,20 +26,20 @@ export const TransactionsContext = createContext<TransactionsContextData>({} as 
 export function TransactionsProvider({children }: TransactionsProviderProps){
     const [transactions, setTransactions] = useState<Transaction[]>([]);
     useEffect(() => {
-        api.get('transactions')
-        .then(response => setTransactions(response.data.transactions))
+        api.get('list')
+        .then(response => setTransactions(response.data))
     },[])
 
     async function createTransaction(transactionInput: TransactionInput){
-        const response = await api.post('/transactions', {
+        const response = await api.post('/create', {
             ...transactionInput,
             createdAt: new Date()})
-        const { transaction } = response.data;
 
-        setTransactions([
-            ...transactions,
-            transaction,
-        ])
+        console.log('33333333333333333333333333333', response)
+
+        const transaction = response.data;
+
+        setTransactions(transaction)
     }
 
     return (
